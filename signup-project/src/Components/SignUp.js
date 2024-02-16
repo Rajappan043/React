@@ -1,14 +1,13 @@
 import React, { useReducer } from "react";
-import './SignUp.css';
+import "./SignUp.css";
 const initialState = {
   firstname: "",
   lastname: "",
   email: "",
   password: "",
   confirmpassword: "",
-  errors:{}
+  errors: {},
 };
-
 const reducer = (state, action) => {
   switch (action.type) {
     case "Update":
@@ -44,7 +43,7 @@ const reducer = (state, action) => {
 };
 
 function SignUp() {
-  const [state, dispatch] = useReducer(reducer,initialState);
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleChange = (e) => {
     dispatch({
@@ -66,8 +65,8 @@ function SignUp() {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className="container">
+      <form onSubmit={handleSubmit} className="form">
         <h1>Register</h1>
         <p>Create your account </p>
         <input
@@ -80,7 +79,7 @@ function SignUp() {
           onChange={handleChange}
           required
         />
-        {state.errors.firstname && <p>{state.errors.firstname}</p>}
+        {state.errors.firstname && <span>{state.errors.firstname}</span>}
         <br />
         <input
           id="lastname"
@@ -92,7 +91,7 @@ function SignUp() {
           onChange={handleChange}
           required
         />
-        {state.errors.lastname && <p>{state.errors.lastname}</p>}
+        {state.errors.lastname && <span>{state.errors.lastname}</span>}
         <br />
         <input
           id="email-id"
@@ -104,7 +103,7 @@ function SignUp() {
           onChange={handleChange}
           required
         />
-        {state.errors.email && <p>{state.errors.email}</p>}
+        {state.errors.email && <span>{state.errors.email}</span>}
         <br />
         <input
           id="Password-id"
@@ -117,7 +116,7 @@ function SignUp() {
           required
         />
         <br />
-        {state.errors.password && <p>{state.errors.password}</p>}
+        {state.errors.password && <span>{state.errors.password}</span>}
         <input
           id="confirm-password"
           name="confirmpassword"
@@ -128,7 +127,9 @@ function SignUp() {
           onChange={handleChange}
           required
         />
-        {state.errors.confirmpassword && <p>{state.errors.confirmpassword}</p>}
+        {state.errors.confirmpassword && (
+          <span>{state.errors.confirmpassword}</span>
+        )}
         <br />
         <button>Register</button>
       </form>
