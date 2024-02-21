@@ -1,0 +1,23 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  background-color: antiquewhite;
+}
+.count {
+  font-size: 80px;
+  position: relative;
+  top: 250px;
+  left: 40rem;
+}
+button {
+  position: relative;
+  left: 42%;
+  top: 300px;
+  padding: 10px 20px;
+  border-radius: 100px;
+  font-size: 2rem;
+  background-color: black;
+  color: azure;
+  cursor: pointer;
+  margin: 0px 35px;
+}
