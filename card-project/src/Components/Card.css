@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+.Container {
+  display: flex;
+  background-color: rgb(255 255 255);
+  color: rgb(236 253 245);
+}
+h2 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+h3 {
+  margin-top: 0px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+p {
+  margin-top: 0px;
+  text-align: center;
+}
+.card {
+  display: flex;
+  padding: 10px;
+  padding-top: 19px;
+  height: 450px;
+  width: 300px;
+  flex-direction: column;
+  background-color: rgb(12 74 110);
+  border-radius: 20px;
+  color: rgb(239 246 255);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.img-online {
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid rgb(21 128 61);
+  padding: 5px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.img-offline {
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px ridge red;
+  padding: 5px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+.details {
+  text-align: center;
+}
+.button {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  margin-top: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.skill {
+  margin-bottom: 10px;
+  text-align: center;
+}
+span {
+  padding: 5px;
+  margin-left: 10px;
+  width: fit-content;
+  border-radius: 3px;
+}
+.ONLINE {
+  background-color: rgb(74 222 128);
+}
+.OFFLINE {
+  background-color: rgb(220 38 38);
+}
+.message {
+  height: 3em;
+  width: 40%;
+  border-radius: 5px;
+  background-color:floralwhite;
+  border: solid 1px transparent;
+  color:rgb(3 105 161);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+.following {
+  height: 3em;
+  width: 40%;
+  font-weight: 600;
+  border-radius: 5px;
+  background-color: floralwhite;
+  color:rgb(3 105 161);
+  border: none;
+  cursor: pointer;
+}
+.follow {
+  height: 3em;
+  width: 40%;
+  border-radius: 5px;
+  font-weight: 600;
+  color: floralwhite;
+  background-color:rgb(3 105 161);
+  border: none;
+  cursor: pointer;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  gap: 11px;
+}
+input {
+  height: 80px;
+  width: 190px;
+  border-color: none;
+  border-radius: 6px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+}
+.send {
+  width: 70px;
+  height: 60px;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: larger;
+  color: floralwhite;
+  background-color: rgb(30 58 138);
+  border: 2px solid ;
+  cursor: pointer;
+}

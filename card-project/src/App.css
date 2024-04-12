@@ -1,0 +1,26 @@
+.Card-data {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 100px 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 300px;
+  margin-top: 100px;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin:0px;
+  padding: 20px;
+  font-style: italic;
+  font-weight: 600;
+  color: floralwhite;
+  background-color: rgb(12 74 110);
+  border: 10px;
+  border-style: solid;
+  border-left-style: none;
+  border-right-style: none;
+  border-color: rgb(8 51 68);
+}
