@@ -1,0 +1,22 @@
+.addmember-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  height: 650px;
+  overflow-y: scroll;
+  margin-top: 30px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border-radius: 5px;
+  padding: 20px 40px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  bottom: 30px;
+  gap: 5px;
+}
+input[type="date"] {
+	min-height: 3.1rem;
+}
+select {
+	min-height: 3.1rem;
+}

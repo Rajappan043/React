@@ -1,0 +1,61 @@
+import db from '../config/db';
+import  Sequelize  from 'sequelize';
+const patient =db.define('patient',{
+    id:{
+        type:Sequelize.INTEGER,
+        primaryKey:true,
+        autoIncrement:true
+    },
+    email:{
+        type:Sequelize.STRING,
+        allowNull:false,
+    },
+    password:{
+        type:Sequelize.STRING,
+        allowNull:false
+    },
+    firstName:{
+        type:Sequelize.STRING,
+        allowNull:false
+    },
+    lastName:{
+        type:Sequelize.STRING,
+        allowNull:true
+    },
+    DOB:{
+        type:Sequelize.DATEONLY,
+        allowNull:true
+    },
+    gender:{
+        type:Sequelize.STRING,
+        allowNull:true
+    },
+    role:{
+        type:Sequelize.STRING,
+        allowNull:false
+    },
+    address:{
+      type:Sequelize.STRING,
+      allowNull:true
+    },
+    phoneNo:{
+        type:Sequelize.STRING,
+        allowNull:true
+    },
+    insurancePlan:{
+        type:Sequelize.STRING,
+        allowNull:true
+    },
+    insuranceamount:{
+        type:Sequelize.INTEGER,
+        allowNull:true
+    },
+    maxClaimableAmount:{
+        type:Sequelize.INTEGER,
+        allowNull:true
+    }
+},{
+    timestamps:true
+})
+
+export default patient;

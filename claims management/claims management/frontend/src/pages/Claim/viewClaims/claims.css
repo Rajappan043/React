@@ -1,0 +1,64 @@
+
+.all-claims {
+  margin-top: -30%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;  max-width: 1000px; 
+}
+
+.all-claims h4 {
+  margin-bottom: 15px;
+  color: #343a40; 
+}
+
+
+.table {
+  width: 100%;
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.table thead th {
+  padding: 12px 18px;
+  border-bottom: 2px solid #ddd;
+  text-align: left; 
+}
+
+.table tbody tr {
+  padding: 10px 18px;
+  border-bottom: 1px solid #eee;
+  cursor: pointer; 
+}
+
+.table-striped tbody tr:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+.table-dark {
+  background-color: #e9ecef; 
+}
+
+.table-dark th,
+.table-dark td,
+.table-dark thead th {
+  border-color: #ddd;
+}
+
+/* Text center styles */
+.text-center {
+  text-align: center;
+}
+
+/* Alert styles */
+.alert {
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: #e74c3c;
+}
