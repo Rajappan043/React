@@ -1,6 +1,9 @@
 
 .all-claims {
-  margin-top: -30%;
+  /* margin-top: -30%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
